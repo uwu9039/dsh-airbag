@@ -1,0 +1,68 @@
+{
+  "name": "dsh-airbag",
+  "description": "Non-intrusive safety belt for DeepSeek Harness: blocks API keys pasted to the agent, blocks secret writes, tracks leak events, and offers a workspace health scan. 非侵入式安全护栏：拦截粘贴给 Agent 的 API 密钥、写入拦截、泄露追踪与工作区安全体检。",
+  "version": "0.4.2",
+  "type": "module",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "security",
+    "secret-detection",
+    "airbag",
+    "privacy"
+  ],
+  "main": "lib/index.mjs",
+  "exports": {
+    ".": "./lib/index.mjs",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "src",
+    "tests",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "prepare": "tsdown"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/schemastery": "^3.18.1",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^24.0.0",
+    "jsdom": "^26.1.0",
+    "tsdown": "0.22.14",
+    "typescript": "^5.7.0",
+    "vitest": "4.1.10"
+  },
+  "license": "MIT"
+}
+
+
+
+

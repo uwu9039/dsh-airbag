@@ -1,0 +1,23 @@
+# Generated artifacts
+node_modules/
+lib/
+*.tgz
+
+# Local pnpm store & reference docs (never published)
+.pnpm-store/
+_docs/
+
+# Throwaway DSH home used for isolated install tests
+.dsh-scratch/
+
+# Local state
+*.log
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Local E2E scratch
+.e2e/
+.e2e-data/
