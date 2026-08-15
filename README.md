@@ -25,8 +25,16 @@ dsh plugin --profile web add dsh-airbag
 
 ### 方式二：从 tarball 安装
 
+从 [GitHub Release](https://github.com/uwu9039/dsh-airbag/releases/latest) 下载 `dsh-airbag-0.4.2.tgz`（或运行 `npm pack dsh-airbag` 自行生成），然后：
+
 ```sh
 dsh plugin --profile web add ./dsh-airbag-0.4.2.tgz
+```
+
+也可以直接使用 Release 资产地址（与 npm 包内容一致）：
+
+```sh
+dsh plugin --profile web add https://github.com/uwu9039/dsh-airbag/releases/download/v0.4.2/dsh-airbag-0.4.2.tgz
 ```
 
 ### 方式三：从 GitHub 安装

@@ -25,8 +25,16 @@ dsh plugin --profile web add dsh-airbag
 
 ### Method 2: From a tarball
 
+Download `dsh-airbag-0.4.2.tgz` from the [GitHub Release](https://github.com/uwu9039/dsh-airbag/releases/latest) page (or generate it yourself with `npm pack dsh-airbag`), then:
+
 ```sh
 dsh plugin --profile web add ./dsh-airbag-0.4.2.tgz
+```
+
+You can also point `add` directly at the release asset (identical content to the npm package):
+
+```sh
+dsh plugin --profile web add https://github.com/uwu9039/dsh-airbag/releases/download/v0.4.2/dsh-airbag-0.4.2.tgz
 ```
 
 ### Method 3: From GitHub
