@@ -1,3 +1,4 @@
+[![npm downloads](https://img.shields.io/npm/dm/dsh-airbag)](https://www.npmjs.com/package/dsh-airbag)
 # dsh-airbag
 
 DeepSeek Harness 的非侵入式安全护栏：拦截粘贴给 Agent 的 API 密钥、追踪泄露事件、拦截密钥写入，并提供首次工作区安全体检。
